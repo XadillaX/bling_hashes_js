@@ -5,6 +5,10 @@
 #include <string>
 #include <algorithm>
 
+uint32* new_uint32() {
+  return reinterpret_cast<uint32*>(malloc(sizeof(uint32)));
+}
+
 uint64* new_uint64() {
   return reinterpret_cast<uint64*>(malloc(sizeof(uint64)));
 }
@@ -13,10 +17,10 @@ uint128* new_uint128() {
   return reinterpret_cast<uint128*>(malloc(sizeof(uint128)));
 }
 
-uint32 CalcCityHash32(const char* str) {
+void CalcCityHash32(const char* str, void* buf) {
   std::string source = str;
   uint32 hash = CityHash32(str, strlen(str));
-  return hash;
+  memcpy(buf, &hash, sizeof(uint32));
 }
 
 void CalcCityHash64(const char* str, void* buf) {
@@ -31,7 +35,7 @@ void CalcCityHash128(const char* str, void* buf) {
   memcpy(buf, &hash, sizeof(uint128));
 }
 
-unsigned int CalcHash(const char* type, const char* str) {
+void CalcHash(const char* type, const char* str, void* buf) {
   std::string type_str = type;
   std::transform(type_str.begin(),
                  type_str.end(),
@@ -57,6 +61,5 @@ unsigned int CalcHash(const char* type, const char* str) {
   if (type_str == "AP") func = ap_hash;
 
   unsigned int hash = func(const_cast<char*>(str));
-
-  return hash;
+  memcpy(buf, &hash, sizeof(uint32));
 }

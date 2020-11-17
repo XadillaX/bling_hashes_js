@@ -3,6 +3,7 @@ dist/export.js: dist/byvoid.o dist/city.o src/export.cc src/export.h
 		-o dist/export.js src/export.cc dist/byvoid.o dist/city.o \
 		-s WASM=0 \
 		-s EXPORTED_FUNCTIONS="[ \
+			'_new_uint32', \
 			'_new_uint64', \
 			'_new_uint128', \
 			'_CalcHash', \

@@ -4,14 +4,19 @@
   "description": "Pure JavaScript dist for Bling hashes.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha test"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/XadillaX/bling_hashes_js.git"
   },
   "keywords": [
-    "hash"
+    "hash",
+    "string hash",
+    "elfen hash",
+    "cityhash",
+    "bkdr hash",
+    "city hash"
   ],
   "author": "XadillaX <i@2333.moe>",
   "license": "MIT",
@@ -22,5 +27,10 @@
   "dependencies": {
     "big-number": "^2.0.0",
     "long": "^4.0.0"
+  },
+  "devDependencies": {
+    "coveralls": "^2.13.3",
+    "istanbul": "^0.3.22",
+    "mocha": "^8.2.1"
   }
 }
