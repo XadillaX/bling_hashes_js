@@ -4,8 +4,14 @@
   "description": "Pure JavaScript dist for Bling hashes.",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test"
+    "test": "mocha test",
+    "ci": "istanbul cover mocha --report lcovonly -- -R spec"
   },
+  "files": [
+    "dist/export.js",
+    "lib/*",
+    "index.js"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/XadillaX/bling_hashes_js.git"
