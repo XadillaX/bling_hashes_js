@@ -1,0 +1,26 @@
+{
+  "name": "bling-hashes-js",
+  "version": "1.0.0",
+  "description": "Pure JavaScript dist for Bling hashes.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XadillaX/bling_hashes_js.git"
+  },
+  "keywords": [
+    "hash"
+  ],
+  "author": "XadillaX <i@2333.moe>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/XadillaX/bling_hashes_js/issues"
+  },
+  "homepage": "https://github.com/XadillaX/bling_hashes_js#readme",
+  "dependencies": {
+    "big-number": "^2.0.0",
+    "long": "^4.0.0"
+  }
+}
