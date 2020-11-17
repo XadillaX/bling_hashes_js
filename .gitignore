@@ -102,3 +102,11 @@ dist
 
 # TernJS port file
 .tern-port
+
+deps/cityhash/Makefile
+deps/cityhash/config.h
+deps/cityhash/config.status
+deps/cityhash/libtool
+deps/cityhash/src/.deps
+deps/cityhash/src/Makefile
+deps/cityhash/stamp-h1
