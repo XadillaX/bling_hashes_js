@@ -9,7 +9,7 @@
   },
   "files": [
     "dist/export.js",
-    "lib/*",
+    "lib",
     "index.js"
   ],
   "repository": {
