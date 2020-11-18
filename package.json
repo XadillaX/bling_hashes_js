@@ -1,6 +1,6 @@
 {
   "name": "bling-hashes-js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Pure JavaScript dist for Bling hashes.",
   "main": "index.js",
   "scripts": {
