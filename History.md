@@ -1,4 +1,10 @@
 
+1.0.2 / 2020-11-18
+==================
+
+**others**
+  * [[`2143ca6`](http://github.com/XadillaX/bling_hashes_js/commit/2143ca6a518ac72937aadaa171c4fba615291705)] - chore: add **/*.d.ts to package.json (XadillaX <<i@2333.moe>>)
+
 1.0.1 / 2020-11-18
 ==================
 
