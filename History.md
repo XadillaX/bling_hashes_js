@@ -1,4 +1,10 @@
 
+1.0.3 / 2020-11-18
+==================
+
+**others**
+  * [[`9f492c2`](http://github.com/XadillaX/bling_hashes_js/commit/9f492c21759ff727187ed78ead3f5f734924d6f2)] - chore: fixup *.d.ts (XadillaX <<i@2333.moe>>)
+
 1.0.2 / 2020-11-18
 ==================
 
