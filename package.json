@@ -5,7 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha test",
-    "ci": "istanbul cover mocha --report lcovonly -- -R spec"
+    "coverage": "istanbul cover mocha --report lcovonly -- -R spec",
+    "lint": "eslint .",
+    "d-ts-lint": "tsc **/*.d.ts",
+    "build": "make dist/export.js",
+    "ci": "npm run build && npm run d-ts-lint && npm run lint && npm run coverage"
   },
   "files": [
     "dist/export.js",
@@ -17,26 +21,30 @@
     "url": "git+https://github.com/XadillaX/bling_hashes_js.git"
   },
   "keywords": [
+    "cityhash",
+    "city hash",
     "hash",
     "string hash",
     "elfen hash",
-    "cityhash",
-    "bkdr hash",
-    "city hash"
+    "bkdr hash"
   ],
   "author": "XadillaX <i@2333.moe>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/XadillaX/bling_hashes_js/issues"
   },
-  "homepage": "https://github.com/XadillaX/bling_hashes_js#readme",
+  "homepage": "https://github.com/XadillaX/bling_hashes_js",
   "dependencies": {
+    "@types/node": "^14.14.8",
     "big-number": "^2.0.0",
     "long": "^4.0.0"
   },
   "devDependencies": {
     "coveralls": "^2.13.3",
+    "eslint": "^7.13.0",
+    "eslint-config-egg": "^9.0.0",
     "istanbul": "^0.3.22",
-    "mocha": "^8.2.1"
+    "mocha": "^8.2.1",
+    "typescript": "^4.0.5"
   }
 }

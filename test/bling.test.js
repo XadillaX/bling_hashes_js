@@ -53,7 +53,7 @@ describe('hash algorithm tests', function() {
 
       const fs = require('fs');
       const std = fs.readFileSync(__dirname + '/resources/' + name + '.txt', {
-        encoding: 'utf8'
+        encoding: 'utf8',
       });
 
       assert.strictEqual(res.join('\n'), std);
