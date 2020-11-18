@@ -2,10 +2,6 @@
 import * as BigNumber from './big-number.d';
 import * as Long from 'long';
 
-export = City128Value;
-export as namespace City128Value;
-declare namespace City128Value {}
-
 declare class City128Value {
   constructor(buffs: Buffer[]);
 
@@ -18,3 +14,7 @@ declare class City128Value {
   public longs: Long[];
   public val: BigNumber;
 }
+
+export as namespace City128Value;
+declare namespace City128Value {}
+export = City128Value;

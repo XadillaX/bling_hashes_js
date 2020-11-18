@@ -1,8 +1,4 @@
 /// <reference types="node" />
-export = BigNumber;
-export as namespace BigNumber;
-declare namespace BigNumber {}
-
 type InitialNumberType = string | number | string[] | BigNumber;
 
 declare class BigNumber {
@@ -37,3 +33,7 @@ declare class BigNumber {
   val(): string;
   toString(): string;
 }
+
+export as namespace BigNumber;
+declare namespace BigNumber {}
+export = BigNumber;
